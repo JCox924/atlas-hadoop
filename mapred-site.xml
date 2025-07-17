@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- Use YARN to run MapReduce jobs -->
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn</value>
+  </property>
+  <!-- Shuffle service -->
+  <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>localhost:10020</value>
+  </property>
+</configuration>

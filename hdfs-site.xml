@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- Replicate blocks only once on a single‑node cluster -->
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+  <!-- Directories for NameNode and DataNode metadata -->
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>file:///opt/hadoop-3.3.2/data/namenode</value>
+  </property>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>file:///opt/hadoop-3.3.2/data/datanode</value>
+  </property>
+</configuration>
