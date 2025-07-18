@@ -39,7 +39,7 @@ RUN python -m pip install snakebite && \
 
 RUN wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz && \
     tar -xzvf hadoop-3.3.2.tar.gz -C /opt/ && \
-    rm hadoop-3.3.2.tar.gz \
+    rm hadoop-3.3.2.tar.gz
 
 RUN ssh-keygen -t rsa -P '' -f /root/.ssh/id_rsa && \
     cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys && \
